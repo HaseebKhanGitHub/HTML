@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Bootstrap/css/Question2.css">
+ 
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#file"><b>File</b></a></li>
+  <li><a href="#computer"><b>Computer</b></a></li>
+  <li><a href="#view"><b>View</b></a></li>
+  
+</ul>
+<hr style="width:100%;text-align:left;margin-left:0">
+<br>
+<div class="row">
+  <div class="column">
+<br>
+<i class="fa fa-star-half" style="color:blue"></i>Quick Access<br><br>
+<i class="fa fa-cloud" style="color:blue"></i>OneDrive<br>
+<div class="select" style=" border:0; heigth:20px"><br><i class="fa fa-desktop" style="color:blue; "></i>This PC<br><br></div>
+<i class="fa fa-globe" style="color:blue"></i>Network<br>
+
+  </div>
+  <div class="column1">
+<i class="fa fa-angle-down" ></i><b> Folders </b><hr><br>
+<img src="idc1.png"><figcaption>3D Objects</figcaption><img src="1.png"><img src="2.png"><img src="3.png" id="example-image"><img src="4.png"><img src="5.png">
+<br><i class="fa fa-angle-down" ></i><b> Devices and Drivers</b><hr><br>  
+<img src="Idc.png"><img src="Idc2.png"><img src="Idc3.png">
+
+
+</div>
+
+</div>
+<script>
+    const image = document.getElementById("example-image");
+    image.addEventListener("click", function() {
+      alert("Your Music Folder can't be accessed as It has been Moved or Modified!");
+    });
+  </script>
+
+</body>
+</html>
