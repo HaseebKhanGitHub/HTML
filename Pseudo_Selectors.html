@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Selectors</title>
+	<style>
+	header li{
+		list-style: none;
+	}
+	a:link,a:visited{
+		text-decoration: none;
+		background-color: green;
+		border: 1px solid blue;
+		color: black;
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-bottom: 1px;
+		}
+	a:hover,a:active{
+		background-color: orangered;
+		color:black;
+	}
+	section div:nth-child(Odd) {
+		background-color: grey;
+	}
+	section div:nth-child(4):hover{
+		background-color: green;
+		cursor: pointer: ;
+	}
+	div, span {
+  background-color: blue;
+}
+	</style>
+	</head>
+<body>
+	<h1>Pseudo-Selectors</h1>
+	<header>
+	<ul>
+		<li><a href="https://www.wikipedia.org/">Home</a></li>
+		<li><a href="https://www.google.com">Anything</a></li><a href="https://www.twitter.com">Something</a>
+		</li>	
+
+	</ul></header>
+<div>Hello</div>
+<span>World</span>
+<section>
+	<div>Div 1</div>
+	<div>Div 2</div>
+	<div>Div 3</div>
+	<div>Div 4</div>
+	<div>Div 5</div>
+	<div>Div 6</div>
+	<div>Div 7</div>
+	<div>Div 8</div>
+	<div>Div 9</div>
+	<div>Div 10</div>
+	<div>Div 1</div>
+	<div>Div 1</div>
+	<div>Div 1</div>
+	<div>Div 1</div>
+</section>
+
+</body>
+</html>
