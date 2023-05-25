@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+    /* CSS for the toggle button */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar .menu-icon {
+      float: right;
+      display: none;
+      cursor: pointer;
+      padding: 16px;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+
+      .navbar a.menu-icon {
+        display: block;
+      }
+
+      .navbar.responsive .menu-icon {
+        background-color: #ddd;
+      }
+
+      .navbar.responsive .menu-icon:hover {
+        background-color: #bbb;
+      }
+
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar" id="myNavbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a class="menu-icon" onclick="toggleNavbar()">
+      <!-- Toggle button icon (e.g., three horizontal lines) -->
+      &#9776;
+    </a>
+  </div>
+
+  <script>
+    // Function to toggle the responsive class on the navbar
+    function toggleNavbar() {
+      var navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
+</body>
+</html>
