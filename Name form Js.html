@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Name Form</title>
+    <script>
+      function getNames() {
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        console.log(`First Name: ${firstName}\nLast Name: ${lastName}`);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Name Form</h2>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName"><br>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName"><br>
+
+      <input type="button" value="Submit" onclick="getNames()">
+    </form>
+  </body>
+</html>
