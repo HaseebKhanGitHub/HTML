@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Information Technology</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    #itContent {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Information Technology</h1>
+  <button id="toggleButton">Toggle Content</button>
+  <div id="itContent">
+    <h2>What is Information Technology?</h2>
+    <p>
+      Information Technology (IT) refers to the use, development, and management of computer systems, software, networks, and electronic data. It involves the study, design, implementation, support, and management of computer-based information systems.
+    </p>
+    <h2>Importance of IT</h2>
+    <p>
+      IT plays a crucial role in various aspects of modern life, including business operations, communication, data storage and analysis, entertainment, education, healthcare, and more. It enables automation, improves efficiency, facilitates communication, and drives innovation across industries.
+    </p>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Document ready function
+      console.log("Document is ready");
+
+      // Toggle button click function
+      $("#toggleButton").click(function() {
+        $("#itContent").toggle();
+      });
+
+      // Double click function
+      $("#itContent").dblclick(function() {
+        alert("You double clicked the content!");
+      });
+
+      // Mouse enter function
+      $("#itContent").mouseenter(function() {
+        console.log("Mouse entered the content!");
+      });
+
+      // Mouse leave function
+      $("#itContent").mouseleave(function() {
+        console.log("Mouse left the content!");
+      });
+
+      // Mouse up function
+      $("#itContent").mouseup(function() {
+        console.log("Mouse button released over the content!");
+      });
+
+      // Mouse down function
+      $("#itContent").mousedown(function() {
+        console.log("Mouse button pressed down over the content!");
+      });
+
+      // Mouse hover function
+      $("#itContent").hover(function() {
+        console.log("Mouse is hovering over the content!");
+      });
+
+      // Focus function
+      $("#itContent").focus(function() {
+        console.log("Content is focused!");
+      });
+
+      // Blur function
+      $("#itContent").blur(function() {
+        console.log("Content lost focus!");
+      });
+    });
+  </script>
+</body>
+</html>
