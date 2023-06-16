@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var education = document.getElementById("education").checked;
+
+      // Check if all fields are filled
+      if (username === "" || password === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      // Check username length
+      if (username.length < 4) {
+        alert("Username should be at least 4 characters long.");
+        return false;
+      }
+
+      // Check password pattern
+      if (!/^\d.*\$$/.test(password)) {
+        alert("Password should start with a digit and end with '$'.");
+        return false;
+      }
+
+      // Education checkbox validation
+      if (!education) {
+        alert("Please select your education field.");
+        return false;
+      }
+
+      // If all validations pass, the form is valid
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="education">Education:</label>
+    <input type="checkbox" id="education" name="education"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
