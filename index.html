@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <form action="#" method="post" >
+        <h2>Sign Up</h2><br>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" placeholder="Enter First Name" required><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" placeholder="Enter Last Name" required><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" required><b>Male</b>
+        <input type="radio" name="gender" required><b>Female</b><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter Email Address" required><br>
+        <label for="contact">Contact:</label>
+        <input type="number" name="contact" placeholder="Enter Contact Number" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter Password" required><br>
+
+        <!-- Place the checkbox and label together in a div -->
+        <div class="checkbox-container">
+            <input type="checkbox">
+            <label class="heading">I accept terms & conditions T & C</label>
+        </div>
+
+        <button type="submit" value="Sign Up">Sign Up</button>
+    </form>
+</body>
+</html>
