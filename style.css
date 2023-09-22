@@ -1,0 +1,89 @@
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    background-color: green;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+  
+}
+
+
+h1{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-left: 38px;
+    width: 400px;
+    margin-bottom: 30px;
+    
+}
+
+form{
+   
+    width: 450px;
+    height: 400px;
+}
+label {
+    display: inline-block;
+    font-weight: bold;
+    width: 130px;
+    size: 120px;
+    height: 20px;
+    font-size: 15px;
+    color: black;
+    margin-left: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border-color: green;
+    border-style: solid;
+    border-width: 4px; 
+    margin-left: 40px;
+    margin: 10px;
+    height: 20px;
+    width: 200px;
+}
+
+
+input[type=radio]{
+cursor: pointer;
+height: 20px;
+width: 28px;
+}
+
+button{
+    width: 200px;
+    margin-left: 100px;
+    background-color: rgb(4, 122, 0);
+    height: 30px;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: blue;
+}
+
+
