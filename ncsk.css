@@ -1,0 +1,8 @@
+.checkbox-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center the items */
+}
+
+.heading {
+  margin-right: 10px; /* Add some spacing between the heading and the checkbox */
+}
